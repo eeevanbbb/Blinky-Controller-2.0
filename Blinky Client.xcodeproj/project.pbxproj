@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20E83E501BC30AA9008816EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E4F1BC30AA9008816EA /* AppDelegate.swift */; };
+		20E83E521BC30AA9008816EA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E511BC30AA9008816EA /* FirstViewController.swift */; };
+		20E83E541BC30AA9008816EA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E531BC30AA9008816EA /* SecondViewController.swift */; };
+		20E83E571BC30AA9008816EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E83E551BC30AA9008816EA /* Main.storyboard */; };
+		20E83E591BC30AA9008816EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E83E581BC30AA9008816EA /* Assets.xcassets */; };
+		20E83E5C1BC30AA9008816EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E83E5A1BC30AA9008816EA /* LaunchScreen.storyboard */; };
+		20E83E671BC30AA9008816EA /* Blinky_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E661BC30AA9008816EA /* Blinky_ClientTests.swift */; };
+		20E83E721BC30AA9008816EA /* Blinky_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E711BC30AA9008816EA /* Blinky_ClientUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20E83E631BC30AA9008816EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E83E441BC30AA9008816EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E83E4B1BC30AA9008816EA;
+			remoteInfo = "Blinky Client";
+		};
+		20E83E6E1BC30AA9008816EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E83E441BC30AA9008816EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E83E4B1BC30AA9008816EA;
+			remoteInfo = "Blinky Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20E83E4C1BC30AA9008816EA /* Blinky Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinky Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E83E4F1BC30AA9008816EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20E83E511BC30AA9008816EA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		20E83E531BC30AA9008816EA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		20E83E561BC30AA9008816EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20E83E581BC30AA9008816EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20E83E5B1BC30AA9008816EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20E83E5D1BC30AA9008816EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E83E621BC30AA9008816EA /* Blinky ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blinky ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E83E661BC30AA9008816EA /* Blinky_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blinky_ClientTests.swift; sourceTree = "<group>"; };
+		20E83E681BC30AA9008816EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E83E6D1BC30AA9008816EA /* Blinky ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blinky ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E83E711BC30AA9008816EA /* Blinky_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blinky_ClientUITests.swift; sourceTree = "<group>"; };
+		20E83E731BC30AA9008816EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20E83E491BC30AA9008816EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E83E5F1BC30AA9008816EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E83E6A1BC30AA9008816EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20E83E431BC30AA9008816EA = {
+			isa = PBXGroup;
+			children = (
+				20E83E4E1BC30AA9008816EA /* Blinky Client */,
+				20E83E651BC30AA9008816EA /* Blinky ClientTests */,
+				20E83E701BC30AA9008816EA /* Blinky ClientUITests */,
+				20E83E4D1BC30AA9008816EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20E83E4D1BC30AA9008816EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20E83E4C1BC30AA9008816EA /* Blinky Client.app */,
+				20E83E621BC30AA9008816EA /* Blinky ClientTests.xctest */,
+				20E83E6D1BC30AA9008816EA /* Blinky ClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20E83E4E1BC30AA9008816EA /* Blinky Client */ = {
+			isa = PBXGroup;
+			children = (
+				20E83E4F1BC30AA9008816EA /* AppDelegate.swift */,
+				20E83E511BC30AA9008816EA /* FirstViewController.swift */,
+				20E83E531BC30AA9008816EA /* SecondViewController.swift */,
+				20E83E551BC30AA9008816EA /* Main.storyboard */,
+				20E83E581BC30AA9008816EA /* Assets.xcassets */,
+				20E83E5A1BC30AA9008816EA /* LaunchScreen.storyboard */,
+				20E83E5D1BC30AA9008816EA /* Info.plist */,
+			);
+			path = "Blinky Client";
+			sourceTree = "<group>";
+		};
+		20E83E651BC30AA9008816EA /* Blinky ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				20E83E661BC30AA9008816EA /* Blinky_ClientTests.swift */,
+				20E83E681BC30AA9008816EA /* Info.plist */,
+			);
+			path = "Blinky ClientTests";
+			sourceTree = "<group>";
+		};
+		20E83E701BC30AA9008816EA /* Blinky ClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20E83E711BC30AA9008816EA /* Blinky_ClientUITests.swift */,
+				20E83E731BC30AA9008816EA /* Info.plist */,
+			);
+			path = "Blinky ClientUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20E83E4B1BC30AA9008816EA /* Blinky Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E83E761BC30AA9008816EA /* Build configuration list for PBXNativeTarget "Blinky Client" */;
+			buildPhases = (
+				20E83E481BC30AA9008816EA /* Sources */,
+				20E83E491BC30AA9008816EA /* Frameworks */,
+				20E83E4A1BC30AA9008816EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blinky Client";
+			productName = "Blinky Client";
+			productReference = 20E83E4C1BC30AA9008816EA /* Blinky Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20E83E611BC30AA9008816EA /* Blinky ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E83E791BC30AA9008816EA /* Build configuration list for PBXNativeTarget "Blinky ClientTests" */;
+			buildPhases = (
+				20E83E5E1BC30AA9008816EA /* Sources */,
+				20E83E5F1BC30AA9008816EA /* Frameworks */,
+				20E83E601BC30AA9008816EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E83E641BC30AA9008816EA /* PBXTargetDependency */,
+			);
+			name = "Blinky ClientTests";
+			productName = "Blinky ClientTests";
+			productReference = 20E83E621BC30AA9008816EA /* Blinky ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20E83E6C1BC30AA9008816EA /* Blinky ClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E83E7C1BC30AA9008816EA /* Build configuration list for PBXNativeTarget "Blinky ClientUITests" */;
+			buildPhases = (
+				20E83E691BC30AA9008816EA /* Sources */,
+				20E83E6A1BC30AA9008816EA /* Frameworks */,
+				20E83E6B1BC30AA9008816EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E83E6F1BC30AA9008816EA /* PBXTargetDependency */,
+			);
+			name = "Blinky ClientUITests";
+			productName = "Blinky ClientUITests";
+			productReference = 20E83E6D1BC30AA9008816EA /* Blinky ClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20E83E441BC30AA9008816EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Evan Bernstein";
+				TargetAttributes = {
+					20E83E4B1BC30AA9008816EA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					20E83E611BC30AA9008816EA = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 20E83E4B1BC30AA9008816EA;
+					};
+					20E83E6C1BC30AA9008816EA = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 20E83E4B1BC30AA9008816EA;
+					};
+				};
+			};
+			buildConfigurationList = 20E83E471BC30AA9008816EA /* Build configuration list for PBXProject "Blinky Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20E83E431BC30AA9008816EA;
+			productRefGroup = 20E83E4D1BC30AA9008816EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20E83E4B1BC30AA9008816EA /* Blinky Client */,
+				20E83E611BC30AA9008816EA /* Blinky ClientTests */,
+				20E83E6C1BC30AA9008816EA /* Blinky ClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20E83E4A1BC30AA9008816EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E83E5C1BC30AA9008816EA /* LaunchScreen.storyboard in Resources */,
+				20E83E591BC30AA9008816EA /* Assets.xcassets in Resources */,
+				20E83E571BC30AA9008816EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E83E601BC30AA9008816EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E83E6B1BC30AA9008816EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20E83E481BC30AA9008816EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E83E541BC30AA9008816EA /* SecondViewController.swift in Sources */,
+				20E83E501BC30AA9008816EA /* AppDelegate.swift in Sources */,
+				20E83E521BC30AA9008816EA /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E83E5E1BC30AA9008816EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E83E671BC30AA9008816EA /* Blinky_ClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E83E691BC30AA9008816EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E83E721BC30AA9008816EA /* Blinky_ClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20E83E641BC30AA9008816EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20E83E4B1BC30AA9008816EA /* Blinky Client */;
+			targetProxy = 20E83E631BC30AA9008816EA /* PBXContainerItemProxy */;
+		};
+		20E83E6F1BC30AA9008816EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20E83E4B1BC30AA9008816EA /* Blinky Client */;
+			targetProxy = 20E83E6E1BC30AA9008816EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20E83E551BC30AA9008816EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20E83E561BC30AA9008816EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20E83E5A1BC30AA9008816EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20E83E5B1BC30AA9008816EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20E83E741BC30AA9008816EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20E83E751BC30AA9008816EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20E83E771BC30AA9008816EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Blinky Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20E83E781BC30AA9008816EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Blinky Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		20E83E7A1BC30AA9008816EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Blinky ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-ClientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blinky Client.app/Blinky Client";
+			};
+			name = Debug;
+		};
+		20E83E7B1BC30AA9008816EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Blinky ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-ClientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blinky Client.app/Blinky Client";
+			};
+			name = Release;
+		};
+		20E83E7D1BC30AA9008816EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Blinky ClientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-ClientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Blinky Client";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		20E83E7E1BC30AA9008816EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Blinky ClientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-ClientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Blinky Client";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20E83E471BC30AA9008816EA /* Build configuration list for PBXProject "Blinky Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E83E741BC30AA9008816EA /* Debug */,
+				20E83E751BC30AA9008816EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E83E761BC30AA9008816EA /* Build configuration list for PBXNativeTarget "Blinky Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E83E771BC30AA9008816EA /* Debug */,
+				20E83E781BC30AA9008816EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20E83E791BC30AA9008816EA /* Build configuration list for PBXNativeTarget "Blinky ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E83E7A1BC30AA9008816EA /* Debug */,
+				20E83E7B1BC30AA9008816EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20E83E7C1BC30AA9008816EA /* Build configuration list for PBXNativeTarget "Blinky ClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E83E7D1BC30AA9008816EA /* Debug */,
+				20E83E7E1BC30AA9008816EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20E83E441BC30AA9008816EA /* Project object */;
+}
