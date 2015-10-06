@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206108281BC3876E00D6CF66 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206108261BC3876E00D6CF66 /* Interface.storyboard */; };
+		2061082A1BC3876E00D6CF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206108291BC3876E00D6CF66 /* Assets.xcassets */; };
+		206108311BC3876E00D6CF66 /* Blinky Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 206108301BC3876E00D6CF66 /* Blinky Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		206108361BC3876E00D6CF66 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206108351BC3876E00D6CF66 /* InterfaceController.swift */; };
+		206108381BC3876E00D6CF66 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206108371BC3876E00D6CF66 /* ExtensionDelegate.swift */; };
+		2061083A1BC3876E00D6CF66 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206108391BC3876E00D6CF66 /* GlanceController.swift */; };
+		2061083C1BC3876E00D6CF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2061083B1BC3876E00D6CF66 /* Assets.xcassets */; };
+		206108401BC3876E00D6CF66 /* Blinky Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 206108241BC3876E00D6CF66 /* Blinky Watch.app */; };
+		206108491BC388B100D6CF66 /* HTTPRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EBF1BC32BCB008816EA /* HTTPRequestHandler.swift */; settings = {ASSET_TAGS = (); }; };
+		2061084A1BC38A6200D6CF66 /* HTMLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E861BC326AF008816EA /* HTMLComment.m */; settings = {ASSET_TAGS = (); }; };
+		2061084B1BC38A6200D6CF66 /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E881BC326AF008816EA /* HTMLDocument.m */; settings = {ASSET_TAGS = (); }; };
+		2061084C1BC38A6200D6CF66 /* HTMLDocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8A1BC326AF008816EA /* HTMLDocumentType.m */; settings = {ASSET_TAGS = (); }; };
+		2061084D1BC38A6200D6CF66 /* HTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8C1BC326AF008816EA /* HTMLElement.m */; settings = {ASSET_TAGS = (); }; };
+		2061084E1BC38A6200D6CF66 /* HTMLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8E1BC326AF008816EA /* HTMLEncoding.m */; settings = {ASSET_TAGS = (); }; };
+		2061084F1BC38A6200D6CF66 /* HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E901BC326AF008816EA /* HTMLEntities.m */; settings = {ASSET_TAGS = (); }; };
+		206108501BC38A6200D6CF66 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E931BC326AF008816EA /* HTMLNode.m */; settings = {ASSET_TAGS = (); }; };
+		206108511BC38A6200D6CF66 /* HTMLOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E951BC326AF008816EA /* HTMLOrderedDictionary.m */; settings = {ASSET_TAGS = (); }; };
+		206108521BC38A6200D6CF66 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E971BC326AF008816EA /* HTMLParser.m */; settings = {ASSET_TAGS = (); }; };
+		206108531BC38A6200D6CF66 /* HTMLPreprocessedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E991BC326AF008816EA /* HTMLPreprocessedInputStream.m */; settings = {ASSET_TAGS = (); }; };
+		206108541BC38A6200D6CF66 /* HTMLSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9D1BC326AF008816EA /* HTMLSelector.m */; settings = {ASSET_TAGS = (); }; };
+		206108551BC38A6200D6CF66 /* HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9F1BC326AF008816EA /* HTMLSerialization.m */; settings = {ASSET_TAGS = (); }; };
+		206108561BC38A6200D6CF66 /* HTMLString.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA11BC326AF008816EA /* HTMLString.m */; settings = {ASSET_TAGS = (); }; };
+		206108571BC38A6200D6CF66 /* HTMLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA41BC326AF008816EA /* HTMLTextNode.m */; settings = {ASSET_TAGS = (); }; };
+		206108581BC38A6200D6CF66 /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA61BC326AF008816EA /* HTMLTokenizer.m */; settings = {ASSET_TAGS = (); }; };
+		206108591BC38A6200D6CF66 /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA91BC326AF008816EA /* HTMLTreeEnumerator.m */; settings = {ASSET_TAGS = (); }; };
+		2061085A1BC38A6200D6CF66 /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EAB1BC326AF008816EA /* NSString+HTMLEntities.m */; settings = {ASSET_TAGS = (); }; };
+		2061085C1BC38C7200D6CF66 /* ColorsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061085B1BC38C7200D6CF66 /* ColorsInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		2061085E1BC38C8300D6CF66 /* SpeedInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061085D1BC38C8300D6CF66 /* SpeedInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 		20E83E501BC30AA9008816EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E4F1BC30AA9008816EA /* AppDelegate.swift */; };
 		20E83E571BC30AA9008816EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E83E551BC30AA9008816EA /* Main.storyboard */; };
 		20E83E591BC30AA9008816EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E83E581BC30AA9008816EA /* Assets.xcassets */; };
@@ -34,9 +62,24 @@
 		20E83EC01BC32BCB008816EA /* HTTPRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EBF1BC32BCB008816EA /* HTTPRequestHandler.swift */; settings = {ASSET_TAGS = (); }; };
 		20E83EC41BC36091008816EA /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EC31BC36091008816EA /* UIColor+Expanded.m */; settings = {ASSET_TAGS = (); }; };
 		20E83EC61BC360E2008816EA /* SpeedAndColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EC51BC360E2008816EA /* SpeedAndColorViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		20E83EC81BC383A4008816EA /* BlinkyTape .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20E83EC71BC383A4008816EA /* BlinkyTape .jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		206108321BC3876E00D6CF66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E83E441BC30AA9008816EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2061082F1BC3876E00D6CF66;
+			remoteInfo = "Blinky Watch Extension";
+		};
+		2061083E1BC3876E00D6CF66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E83E441BC30AA9008816EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 206108231BC3876E00D6CF66;
+			remoteInfo = "Blinky Watch";
+		};
 		20E83E631BC30AA9008816EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 20E83E441BC30AA9008816EA /* Project object */;
@@ -53,7 +96,44 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		206108461BC3876E00D6CF66 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				206108311BC3876E00D6CF66 /* Blinky Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206108481BC3876E00D6CF66 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				206108401BC3876E00D6CF66 /* Blinky Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		206108241BC3876E00D6CF66 /* Blinky Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinky Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		206108271BC3876E00D6CF66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		206108291BC3876E00D6CF66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2061082B1BC3876E00D6CF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		206108301BC3876E00D6CF66 /* Blinky Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Blinky Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		206108351BC3876E00D6CF66 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		206108371BC3876E00D6CF66 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		206108391BC3876E00D6CF66 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		2061083B1BC3876E00D6CF66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2061083D1BC3876E00D6CF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2061085B1BC38C7200D6CF66 /* ColorsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsInterfaceController.swift; sourceTree = "<group>"; };
+		2061085D1BC38C8300D6CF66 /* SpeedInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedInterfaceController.swift; sourceTree = "<group>"; };
 		20E83E4C1BC30AA9008816EA /* Blinky Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinky Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E83E4F1BC30AA9008816EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20E83E561BC30AA9008816EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,9 +191,17 @@
 		20E83EC21BC36091008816EA /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
 		20E83EC31BC36091008816EA /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
 		20E83EC51BC360E2008816EA /* SpeedAndColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedAndColorViewController.swift; sourceTree = "<group>"; };
+		20E83EC71BC383A4008816EA /* BlinkyTape .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BlinkyTape .jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2061082D1BC3876E00D6CF66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20E83E491BC30AA9008816EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,12 +226,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		206108251BC3876E00D6CF66 /* Blinky Watch */ = {
+			isa = PBXGroup;
+			children = (
+				206108261BC3876E00D6CF66 /* Interface.storyboard */,
+				206108291BC3876E00D6CF66 /* Assets.xcassets */,
+				2061082B1BC3876E00D6CF66 /* Info.plist */,
+			);
+			path = "Blinky Watch";
+			sourceTree = "<group>";
+		};
+		206108341BC3876E00D6CF66 /* Blinky Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				206108351BC3876E00D6CF66 /* InterfaceController.swift */,
+				2061085B1BC38C7200D6CF66 /* ColorsInterfaceController.swift */,
+				2061085D1BC38C8300D6CF66 /* SpeedInterfaceController.swift */,
+				206108371BC3876E00D6CF66 /* ExtensionDelegate.swift */,
+				206108391BC3876E00D6CF66 /* GlanceController.swift */,
+				2061083B1BC3876E00D6CF66 /* Assets.xcassets */,
+				2061083D1BC3876E00D6CF66 /* Info.plist */,
+			);
+			path = "Blinky Watch Extension";
+			sourceTree = "<group>";
+		};
 		20E83E431BC30AA9008816EA = {
 			isa = PBXGroup;
 			children = (
 				20E83E4E1BC30AA9008816EA /* Blinky Client */,
 				20E83E651BC30AA9008816EA /* Blinky ClientTests */,
 				20E83E701BC30AA9008816EA /* Blinky ClientUITests */,
+				206108251BC3876E00D6CF66 /* Blinky Watch */,
+				206108341BC3876E00D6CF66 /* Blinky Watch Extension */,
 				20E83E4D1BC30AA9008816EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -154,6 +268,8 @@
 				20E83E4C1BC30AA9008816EA /* Blinky Client.app */,
 				20E83E621BC30AA9008816EA /* Blinky ClientTests.xctest */,
 				20E83E6D1BC30AA9008816EA /* Blinky ClientUITests.xctest */,
+				206108241BC3876E00D6CF66 /* Blinky Watch.app */,
+				206108301BC3876E00D6CF66 /* Blinky Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +277,7 @@
 		20E83E4E1BC30AA9008816EA /* Blinky Client */ = {
 			isa = PBXGroup;
 			children = (
+				20E83EC71BC383A4008816EA /* BlinkyTape .jpg */,
 				20E83EC11BC36091008816EA /* Color */,
 				20E83E841BC326AF008816EA /* HTMLReader */,
 				20E83E4F1BC30AA9008816EA /* AppDelegate.swift */,
@@ -252,6 +369,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		206108231BC3876E00D6CF66 /* Blinky Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 206108471BC3876E00D6CF66 /* Build configuration list for PBXNativeTarget "Blinky Watch" */;
+			buildPhases = (
+				206108221BC3876E00D6CF66 /* Resources */,
+				206108461BC3876E00D6CF66 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				206108331BC3876E00D6CF66 /* PBXTargetDependency */,
+			);
+			name = "Blinky Watch";
+			productName = "Blinky Watch";
+			productReference = 206108241BC3876E00D6CF66 /* Blinky Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2061082F1BC3876E00D6CF66 /* Blinky Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 206108451BC3876E00D6CF66 /* Build configuration list for PBXNativeTarget "Blinky Watch Extension" */;
+			buildPhases = (
+				2061082C1BC3876E00D6CF66 /* Sources */,
+				2061082D1BC3876E00D6CF66 /* Frameworks */,
+				2061082E1BC3876E00D6CF66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blinky Watch Extension";
+			productName = "Blinky Watch Extension";
+			productReference = 206108301BC3876E00D6CF66 /* Blinky Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		20E83E4B1BC30AA9008816EA /* Blinky Client */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20E83E761BC30AA9008816EA /* Build configuration list for PBXNativeTarget "Blinky Client" */;
@@ -259,10 +410,12 @@
 				20E83E481BC30AA9008816EA /* Sources */,
 				20E83E491BC30AA9008816EA /* Frameworks */,
 				20E83E4A1BC30AA9008816EA /* Resources */,
+				206108481BC3876E00D6CF66 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2061083F1BC3876E00D6CF66 /* PBXTargetDependency */,
 			);
 			name = "Blinky Client";
 			productName = "Blinky Client";
@@ -314,8 +467,17 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Evan Bernstein";
 				TargetAttributes = {
+					206108231BC3876E00D6CF66 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 76Y96W7AT3;
+					};
+					2061082F1BC3876E00D6CF66 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 76Y96W7AT3;
+					};
 					20E83E4B1BC30AA9008816EA = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 76Y96W7AT3;
 					};
 					20E83E611BC30AA9008816EA = {
 						CreatedOnToolsVersion = 7.0;
@@ -343,16 +505,36 @@
 				20E83E4B1BC30AA9008816EA /* Blinky Client */,
 				20E83E611BC30AA9008816EA /* Blinky ClientTests */,
 				20E83E6C1BC30AA9008816EA /* Blinky ClientUITests */,
+				206108231BC3876E00D6CF66 /* Blinky Watch */,
+				2061082F1BC3876E00D6CF66 /* Blinky Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		206108221BC3876E00D6CF66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2061082A1BC3876E00D6CF66 /* Assets.xcassets in Resources */,
+				206108281BC3876E00D6CF66 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2061082E1BC3876E00D6CF66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2061083C1BC3876E00D6CF66 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20E83E4A1BC30AA9008816EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				20E83E5C1BC30AA9008816EA /* LaunchScreen.storyboard in Resources */,
+				20E83EC81BC383A4008816EA /* BlinkyTape .jpg in Resources */,
 				20E83E591BC30AA9008816EA /* Assets.xcassets in Resources */,
 				20E83E571BC30AA9008816EA /* Main.storyboard in Resources */,
 			);
@@ -375,6 +557,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2061082C1BC3876E00D6CF66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2061084E1BC38A6200D6CF66 /* HTMLEncoding.m in Sources */,
+				2061085E1BC38C8300D6CF66 /* SpeedInterfaceController.swift in Sources */,
+				206108551BC38A6200D6CF66 /* HTMLSerialization.m in Sources */,
+				206108591BC38A6200D6CF66 /* HTMLTreeEnumerator.m in Sources */,
+				2061084C1BC38A6200D6CF66 /* HTMLDocumentType.m in Sources */,
+				206108521BC38A6200D6CF66 /* HTMLParser.m in Sources */,
+				206108381BC3876E00D6CF66 /* ExtensionDelegate.swift in Sources */,
+				2061084F1BC38A6200D6CF66 /* HTMLEntities.m in Sources */,
+				206108501BC38A6200D6CF66 /* HTMLNode.m in Sources */,
+				206108361BC3876E00D6CF66 /* InterfaceController.swift in Sources */,
+				206108541BC38A6200D6CF66 /* HTMLSelector.m in Sources */,
+				206108571BC38A6200D6CF66 /* HTMLTextNode.m in Sources */,
+				206108511BC38A6200D6CF66 /* HTMLOrderedDictionary.m in Sources */,
+				2061084A1BC38A6200D6CF66 /* HTMLComment.m in Sources */,
+				206108491BC388B100D6CF66 /* HTTPRequestHandler.swift in Sources */,
+				206108581BC38A6200D6CF66 /* HTMLTokenizer.m in Sources */,
+				206108531BC38A6200D6CF66 /* HTMLPreprocessedInputStream.m in Sources */,
+				2061085A1BC38A6200D6CF66 /* NSString+HTMLEntities.m in Sources */,
+				2061083A1BC3876E00D6CF66 /* GlanceController.swift in Sources */,
+				206108561BC38A6200D6CF66 /* HTMLString.m in Sources */,
+				2061085C1BC38C7200D6CF66 /* ColorsInterfaceController.swift in Sources */,
+				2061084B1BC38A6200D6CF66 /* HTMLDocument.m in Sources */,
+				2061084D1BC38A6200D6CF66 /* HTMLElement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20E83E481BC30AA9008816EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,6 +635,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		206108331BC3876E00D6CF66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2061082F1BC3876E00D6CF66 /* Blinky Watch Extension */;
+			targetProxy = 206108321BC3876E00D6CF66 /* PBXContainerItemProxy */;
+		};
+		2061083F1BC3876E00D6CF66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 206108231BC3876E00D6CF66 /* Blinky Watch */;
+			targetProxy = 2061083E1BC3876E00D6CF66 /* PBXContainerItemProxy */;
+		};
 		20E83E641BC30AA9008816EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 20E83E4B1BC30AA9008816EA /* Blinky Client */;
@@ -436,6 +658,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		206108261BC3876E00D6CF66 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				206108271BC3876E00D6CF66 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		20E83E551BC30AA9008816EA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -455,6 +685,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		206108411BC3876E00D6CF66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Blinky_Watch_Extension;
+				INFOPLIST_FILE = "Blinky Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-Client.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		206108421BC3876E00D6CF66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Blinky_Watch_Extension;
+				INFOPLIST_FILE = "Blinky Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-Client.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		206108431BC3876E00D6CF66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Blinky Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-Client.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/Blinky Client/Blinky-Client-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		206108441BC3876E00D6CF66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Blinky Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-Client.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/Blinky Client/Blinky-Client-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		20E83E741BC30AA9008816EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -540,10 +844,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Blinky Client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/Blinky Client/Blinky-Client-Bridging-Header.h";
 			};
 			name = Debug;
@@ -552,10 +859,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Blinky Client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evanbernstein.Blinky-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/Blinky Client/Blinky-Client-Bridging-Header.h";
 			};
 			name = Release;
@@ -611,6 +921,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		206108451BC3876E00D6CF66 /* Build configuration list for PBXNativeTarget "Blinky Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206108431BC3876E00D6CF66 /* Debug */,
+				206108441BC3876E00D6CF66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		206108471BC3876E00D6CF66 /* Build configuration list for PBXNativeTarget "Blinky Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206108411BC3876E00D6CF66 /* Debug */,
+				206108421BC3876E00D6CF66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		20E83E471BC30AA9008816EA /* Build configuration list for PBXProject "Blinky Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -627,6 +953,7 @@
 				20E83E781BC30AA9008816EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20E83E791BC30AA9008816EA /* Build configuration list for PBXNativeTarget "Blinky ClientTests" */ = {
 			isa = XCConfigurationList;
@@ -635,6 +962,7 @@
 				20E83E7B1BC30AA9008816EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20E83E7C1BC30AA9008816EA /* Build configuration list for PBXNativeTarget "Blinky ClientUITests" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +971,7 @@
 				20E83E7E1BC30AA9008816EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

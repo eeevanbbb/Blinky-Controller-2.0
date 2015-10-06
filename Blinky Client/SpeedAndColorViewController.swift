@@ -60,9 +60,10 @@ class SpeedAndColorViewController: UIViewController {
             dispatch_async(dispatch_get_main_queue(), {
                 if data != nil {
                     if self.webViewPresent == false {
-                        let webView = WKWebView(frame: CGRectMake(0, self.view.frame.height, self.view.frame.width, 100))
                         if let HTMLString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
+                            let webView = WKWebView(frame: CGRectMake(0, self.view.frame.height, self.view.frame.width, 100))
                             webView.loadHTMLString(HTMLString as String, baseURL: nil)
+                            self.view.addSubview(webView)
                             self.webViewPresent = true
                             UIView.animateWithDuration(0.5, animations: {
                                 webView.frame = CGRectMake(webView.frame.origin.x, self.view.frame.height-webView.frame.height, self.view.frame.width, webView.frame.height)
@@ -97,9 +98,10 @@ class SpeedAndColorViewController: UIViewController {
             dispatch_async(dispatch_get_main_queue(), {
                 if data != nil {
                     if self.webViewPresent == false {
-                        let webView = WKWebView(frame: CGRectMake(0, self.view.frame.height, self.view.frame.width, 100))
                         if let HTMLString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
+                            let webView = WKWebView(frame: CGRectMake(0, self.view.frame.height, self.view.frame.width, 100))
                             webView.loadHTMLString(HTMLString as String, baseURL: nil)
+                            self.view.addSubview(webView)
                             self.webViewPresent = true
                             UIView.animateWithDuration(0.5, animations: {
                                 webView.frame = CGRectMake(webView.frame.origin.x, self.view.frame.height-webView.frame.height, self.view.frame.width, webView.frame.height)
