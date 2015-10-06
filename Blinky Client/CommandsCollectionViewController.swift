@@ -41,10 +41,12 @@ class CommandsCollectionViewController: UICollectionViewController {
         
         HTTPRequestHandler.sharedInstance.getListOfCommands({
             _commands in
-            if _commands.count > 0 {
-                self.commands = _commands
-                self.collectionView?.reloadData()
-            }
+            dispatch_async(dispatch_get_main_queue(), {
+                if _commands.count > 0 {
+                    self.commands = _commands
+                    self.collectionView?.reloadData()
+                }
+            })
         })
     }
     

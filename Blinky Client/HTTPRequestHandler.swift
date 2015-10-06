@@ -9,7 +9,7 @@
 import UIKit
 
 class HTTPRequestHandler: NSObject {
-    let baseURL = "192.168.0.137:9001"
+    let baseURL = "http://192.168.0.137:9001"
     
     static let sharedInstance = HTTPRequestHandler()
     
@@ -20,7 +20,9 @@ class HTTPRequestHandler: NSObject {
         let session = NSURLSession.sharedSession()
         let _: Void = session.dataTaskWithRequest(request, completionHandler: {
             data, response, error in
-            print("response!")
+            if error != nil {
+                print(error)
+            }
             var commands = [String]()
             if data != nil {
                 if let HTMLString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
