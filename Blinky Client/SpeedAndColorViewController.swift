@@ -51,9 +51,9 @@ class SpeedAndColorViewController: UIViewController {
     func updateColor() {
         let color = UIColor(red: CGFloat(redSlider.value)/255.0, green: CGFloat(greenSlider.value)/255.0, blue: CGFloat(blueSlider.value)/255.0, alpha: 1.0)
         colorBox.backgroundColor = color
-        redLabel.text = String(redSlider.value)
-        greenLabel.text = String(greenSlider.value)
-        blueLabel.text = String(blueSlider.value)
+        redLabel.text = String(Int(redSlider.value))
+        greenLabel.text = String(Int(greenSlider.value))
+        blueLabel.text = String(Int(blueSlider.value))
         
         HTTPRequestHandler.sharedInstance.sendColor(color, completion: {
             data in
@@ -89,7 +89,8 @@ class SpeedAndColorViewController: UIViewController {
     
     func updateSpeed() {
         let speed = Double(speedSlider.value)
-        speedLabel.text = String(speed)
+//        speedLabel.text = String(speed)
+        speedLabel.text = String(format: "%.1f", arguments: [speedSlider.value])
         
         HTTPRequestHandler.sharedInstance.sendSpeed(speed, completion: {
             data in
