@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class SpeedAndColorViewController: UIViewController {
+class SpeedAndColorViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var colorBox: UIView!
     
@@ -23,6 +23,8 @@ class SpeedAndColorViewController: UIViewController {
     
     @IBOutlet var speedSlider: UISlider!
     @IBOutlet var speedLabel: UILabel!
+	
+	@IBOutlet var bpmPicker: UIPickerView!
     
     var webViewPresent = false
 
@@ -133,5 +135,54 @@ class SpeedAndColorViewController: UIViewController {
             updateSpeed()
         }
     }
-
+	
+	
+	
+	/* UIPickerView Data Source */
+	func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+		return 1
+	}
+	
+	func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+		return 200
+	}
+	
+	/* UIPickerView Delegate */
+	func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+		return String(row+1) + " BPM"
+	}
+	
+	func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+		HTTPRequestHandler.sharedInstance.sendBPM(row+1, completion: {
+			data in
+			dispatch_async(dispatch_get_main_queue(), {
+				if data != nil {
+					if self.webViewPresent == false {
+						if let HTMLString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
+							let webView = WKWebView(frame: CGRectMake(0, self.view.frame.height, self.view.frame.width, 100))
+							webView.loadHTMLString(HTMLString as String, baseURL: nil)
+							self.view.addSubview(webView)
+							self.webViewPresent = true
+							UIView.animateWithDuration(0.5, animations: {
+								webView.frame = CGRectMake(webView.frame.origin.x, self.view.frame.height-webView.frame.height, self.view.frame.width, webView.frame.height)
+							})
+							dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
+								self.webViewPresent = false
+								UIView.animateWithDuration(0.5, animations: {
+									webView.frame = CGRectMake(webView.frame.origin.x, self.view.frame.height, self.view.frame.width, webView.frame.height)
+									}, completion: {
+										_ in
+										webView.removeFromSuperview()
+								})
+							});
+						} else {
+							print("Could not parse response data")
+						}
+					}
+				} else {
+					print("Response data is nil")
+				}
+			})
+		})
+	}
 }

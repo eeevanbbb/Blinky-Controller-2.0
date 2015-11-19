@@ -81,4 +81,16 @@ class HTTPRequestHandler: NSObject {
             completion(responseData: data)
         }).resume()
     }
+	
+	func sendBPM(bpm: Int, completion: (responseData: NSData?) -> Void) {
+		let bpmString = String(bpm)
+		
+		let request = NSMutableURLRequest(URL: NSURL(string: baseURL+"/bpm/"+bpmString)!)
+		
+		let session = NSURLSession.sharedSession()
+		let _: Void = session.dataTaskWithRequest(request, completionHandler: {
+			data, response, error in
+			completion(responseData: data)
+		}).resume()
+	}
 }
