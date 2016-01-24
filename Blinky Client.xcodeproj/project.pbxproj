@@ -15,54 +15,55 @@
 		2061083A1BC3876E00D6CF66 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206108391BC3876E00D6CF66 /* GlanceController.swift */; };
 		2061083C1BC3876E00D6CF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2061083B1BC3876E00D6CF66 /* Assets.xcassets */; };
 		206108401BC3876E00D6CF66 /* Blinky Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 206108241BC3876E00D6CF66 /* Blinky Watch.app */; };
-		206108491BC388B100D6CF66 /* HTTPRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EBF1BC32BCB008816EA /* HTTPRequestHandler.swift */; settings = {ASSET_TAGS = (); }; };
-		2061084A1BC38A6200D6CF66 /* HTMLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E861BC326AF008816EA /* HTMLComment.m */; settings = {ASSET_TAGS = (); }; };
-		2061084B1BC38A6200D6CF66 /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E881BC326AF008816EA /* HTMLDocument.m */; settings = {ASSET_TAGS = (); }; };
-		2061084C1BC38A6200D6CF66 /* HTMLDocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8A1BC326AF008816EA /* HTMLDocumentType.m */; settings = {ASSET_TAGS = (); }; };
-		2061084D1BC38A6200D6CF66 /* HTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8C1BC326AF008816EA /* HTMLElement.m */; settings = {ASSET_TAGS = (); }; };
-		2061084E1BC38A6200D6CF66 /* HTMLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8E1BC326AF008816EA /* HTMLEncoding.m */; settings = {ASSET_TAGS = (); }; };
-		2061084F1BC38A6200D6CF66 /* HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E901BC326AF008816EA /* HTMLEntities.m */; settings = {ASSET_TAGS = (); }; };
-		206108501BC38A6200D6CF66 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E931BC326AF008816EA /* HTMLNode.m */; settings = {ASSET_TAGS = (); }; };
-		206108511BC38A6200D6CF66 /* HTMLOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E951BC326AF008816EA /* HTMLOrderedDictionary.m */; settings = {ASSET_TAGS = (); }; };
-		206108521BC38A6200D6CF66 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E971BC326AF008816EA /* HTMLParser.m */; settings = {ASSET_TAGS = (); }; };
-		206108531BC38A6200D6CF66 /* HTMLPreprocessedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E991BC326AF008816EA /* HTMLPreprocessedInputStream.m */; settings = {ASSET_TAGS = (); }; };
-		206108541BC38A6200D6CF66 /* HTMLSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9D1BC326AF008816EA /* HTMLSelector.m */; settings = {ASSET_TAGS = (); }; };
-		206108551BC38A6200D6CF66 /* HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9F1BC326AF008816EA /* HTMLSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		206108561BC38A6200D6CF66 /* HTMLString.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA11BC326AF008816EA /* HTMLString.m */; settings = {ASSET_TAGS = (); }; };
-		206108571BC38A6200D6CF66 /* HTMLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA41BC326AF008816EA /* HTMLTextNode.m */; settings = {ASSET_TAGS = (); }; };
-		206108581BC38A6200D6CF66 /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA61BC326AF008816EA /* HTMLTokenizer.m */; settings = {ASSET_TAGS = (); }; };
-		206108591BC38A6200D6CF66 /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA91BC326AF008816EA /* HTMLTreeEnumerator.m */; settings = {ASSET_TAGS = (); }; };
-		2061085A1BC38A6200D6CF66 /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EAB1BC326AF008816EA /* NSString+HTMLEntities.m */; settings = {ASSET_TAGS = (); }; };
-		2061085C1BC38C7200D6CF66 /* ColorsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061085B1BC38C7200D6CF66 /* ColorsInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
-		2061085E1BC38C8300D6CF66 /* SpeedInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061085D1BC38C8300D6CF66 /* SpeedInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		206108491BC388B100D6CF66 /* HTTPRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EBF1BC32BCB008816EA /* HTTPRequestHandler.swift */; };
+		2061084A1BC38A6200D6CF66 /* HTMLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E861BC326AF008816EA /* HTMLComment.m */; };
+		2061084B1BC38A6200D6CF66 /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E881BC326AF008816EA /* HTMLDocument.m */; };
+		2061084C1BC38A6200D6CF66 /* HTMLDocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8A1BC326AF008816EA /* HTMLDocumentType.m */; };
+		2061084D1BC38A6200D6CF66 /* HTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8C1BC326AF008816EA /* HTMLElement.m */; };
+		2061084E1BC38A6200D6CF66 /* HTMLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8E1BC326AF008816EA /* HTMLEncoding.m */; };
+		2061084F1BC38A6200D6CF66 /* HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E901BC326AF008816EA /* HTMLEntities.m */; };
+		206108501BC38A6200D6CF66 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E931BC326AF008816EA /* HTMLNode.m */; };
+		206108511BC38A6200D6CF66 /* HTMLOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E951BC326AF008816EA /* HTMLOrderedDictionary.m */; };
+		206108521BC38A6200D6CF66 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E971BC326AF008816EA /* HTMLParser.m */; };
+		206108531BC38A6200D6CF66 /* HTMLPreprocessedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E991BC326AF008816EA /* HTMLPreprocessedInputStream.m */; };
+		206108541BC38A6200D6CF66 /* HTMLSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9D1BC326AF008816EA /* HTMLSelector.m */; };
+		206108551BC38A6200D6CF66 /* HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9F1BC326AF008816EA /* HTMLSerialization.m */; };
+		206108561BC38A6200D6CF66 /* HTMLString.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA11BC326AF008816EA /* HTMLString.m */; };
+		206108571BC38A6200D6CF66 /* HTMLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA41BC326AF008816EA /* HTMLTextNode.m */; };
+		206108581BC38A6200D6CF66 /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA61BC326AF008816EA /* HTMLTokenizer.m */; };
+		206108591BC38A6200D6CF66 /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA91BC326AF008816EA /* HTMLTreeEnumerator.m */; };
+		2061085A1BC38A6200D6CF66 /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EAB1BC326AF008816EA /* NSString+HTMLEntities.m */; };
+		2061085C1BC38C7200D6CF66 /* ColorsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061085B1BC38C7200D6CF66 /* ColorsInterfaceController.swift */; };
+		2061085E1BC38C8300D6CF66 /* SpeedInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061085D1BC38C8300D6CF66 /* SpeedInterfaceController.swift */; };
+		20A4D8BD1C5450510099B01F /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EC31BC36091008816EA /* UIColor+Expanded.m */; };
 		20E83E501BC30AA9008816EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E4F1BC30AA9008816EA /* AppDelegate.swift */; };
 		20E83E571BC30AA9008816EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E83E551BC30AA9008816EA /* Main.storyboard */; };
 		20E83E591BC30AA9008816EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E83E581BC30AA9008816EA /* Assets.xcassets */; };
 		20E83E5C1BC30AA9008816EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E83E5A1BC30AA9008816EA /* LaunchScreen.storyboard */; };
 		20E83E671BC30AA9008816EA /* Blinky_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E661BC30AA9008816EA /* Blinky_ClientTests.swift */; };
 		20E83E721BC30AA9008816EA /* Blinky_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E711BC30AA9008816EA /* Blinky_ClientUITests.swift */; };
-		20E83EAC1BC326AF008816EA /* HTMLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E861BC326AF008816EA /* HTMLComment.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EAD1BC326AF008816EA /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E881BC326AF008816EA /* HTMLDocument.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EAE1BC326AF008816EA /* HTMLDocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8A1BC326AF008816EA /* HTMLDocumentType.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EAF1BC326AF008816EA /* HTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8C1BC326AF008816EA /* HTMLElement.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB01BC326AF008816EA /* HTMLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8E1BC326AF008816EA /* HTMLEncoding.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB11BC326AF008816EA /* HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E901BC326AF008816EA /* HTMLEntities.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB21BC326AF008816EA /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E931BC326AF008816EA /* HTMLNode.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB31BC326AF008816EA /* HTMLOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E951BC326AF008816EA /* HTMLOrderedDictionary.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB41BC326AF008816EA /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E971BC326AF008816EA /* HTMLParser.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB51BC326AF008816EA /* HTMLPreprocessedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E991BC326AF008816EA /* HTMLPreprocessedInputStream.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB61BC326AF008816EA /* HTMLSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9D1BC326AF008816EA /* HTMLSelector.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB71BC326AF008816EA /* HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9F1BC326AF008816EA /* HTMLSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB81BC326AF008816EA /* HTMLString.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA11BC326AF008816EA /* HTMLString.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EB91BC326AF008816EA /* HTMLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA41BC326AF008816EA /* HTMLTextNode.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EBA1BC326AF008816EA /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA61BC326AF008816EA /* HTMLTokenizer.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EBB1BC326AF008816EA /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA91BC326AF008816EA /* HTMLTreeEnumerator.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EBC1BC326AF008816EA /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EAB1BC326AF008816EA /* NSString+HTMLEntities.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EBE1BC32A58008816EA /* CommandsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EBD1BC32A58008816EA /* CommandsCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		20E83EC01BC32BCB008816EA /* HTTPRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EBF1BC32BCB008816EA /* HTTPRequestHandler.swift */; settings = {ASSET_TAGS = (); }; };
-		20E83EC41BC36091008816EA /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EC31BC36091008816EA /* UIColor+Expanded.m */; settings = {ASSET_TAGS = (); }; };
-		20E83EC61BC360E2008816EA /* SpeedAndColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EC51BC360E2008816EA /* SpeedAndColorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		20E83EC81BC383A4008816EA /* BlinkyTape .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20E83EC71BC383A4008816EA /* BlinkyTape .jpg */; settings = {ASSET_TAGS = (); }; };
+		20E83EAC1BC326AF008816EA /* HTMLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E861BC326AF008816EA /* HTMLComment.m */; };
+		20E83EAD1BC326AF008816EA /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E881BC326AF008816EA /* HTMLDocument.m */; };
+		20E83EAE1BC326AF008816EA /* HTMLDocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8A1BC326AF008816EA /* HTMLDocumentType.m */; };
+		20E83EAF1BC326AF008816EA /* HTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8C1BC326AF008816EA /* HTMLElement.m */; };
+		20E83EB01BC326AF008816EA /* HTMLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E8E1BC326AF008816EA /* HTMLEncoding.m */; };
+		20E83EB11BC326AF008816EA /* HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E901BC326AF008816EA /* HTMLEntities.m */; };
+		20E83EB21BC326AF008816EA /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E931BC326AF008816EA /* HTMLNode.m */; };
+		20E83EB31BC326AF008816EA /* HTMLOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E951BC326AF008816EA /* HTMLOrderedDictionary.m */; };
+		20E83EB41BC326AF008816EA /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E971BC326AF008816EA /* HTMLParser.m */; };
+		20E83EB51BC326AF008816EA /* HTMLPreprocessedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E991BC326AF008816EA /* HTMLPreprocessedInputStream.m */; };
+		20E83EB61BC326AF008816EA /* HTMLSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9D1BC326AF008816EA /* HTMLSelector.m */; };
+		20E83EB71BC326AF008816EA /* HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83E9F1BC326AF008816EA /* HTMLSerialization.m */; };
+		20E83EB81BC326AF008816EA /* HTMLString.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA11BC326AF008816EA /* HTMLString.m */; };
+		20E83EB91BC326AF008816EA /* HTMLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA41BC326AF008816EA /* HTMLTextNode.m */; };
+		20E83EBA1BC326AF008816EA /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA61BC326AF008816EA /* HTMLTokenizer.m */; };
+		20E83EBB1BC326AF008816EA /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EA91BC326AF008816EA /* HTMLTreeEnumerator.m */; };
+		20E83EBC1BC326AF008816EA /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EAB1BC326AF008816EA /* NSString+HTMLEntities.m */; };
+		20E83EBE1BC32A58008816EA /* CommandsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EBD1BC32A58008816EA /* CommandsCollectionViewController.swift */; };
+		20E83EC01BC32BCB008816EA /* HTTPRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EBF1BC32BCB008816EA /* HTTPRequestHandler.swift */; };
+		20E83EC41BC36091008816EA /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EC31BC36091008816EA /* UIColor+Expanded.m */; };
+		20E83EC61BC360E2008816EA /* SpeedAndColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E83EC51BC360E2008816EA /* SpeedAndColorViewController.swift */; };
+		20E83EC81BC383A4008816EA /* BlinkyTape .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20E83EC71BC383A4008816EA /* BlinkyTape .jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -469,15 +470,15 @@
 				TargetAttributes = {
 					206108231BC3876E00D6CF66 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 76Y96W7AT3;
+						DevelopmentTeam = SSVV96L8NH;
 					};
 					2061082F1BC3876E00D6CF66 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 76Y96W7AT3;
+						DevelopmentTeam = SSVV96L8NH;
 					};
 					20E83E4B1BC30AA9008816EA = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 76Y96W7AT3;
+						DevelopmentTeam = SSVV96L8NH;
 					};
 					20E83E611BC30AA9008816EA = {
 						CreatedOnToolsVersion = 7.0;
@@ -567,6 +568,7 @@
 				206108591BC38A6200D6CF66 /* HTMLTreeEnumerator.m in Sources */,
 				2061084C1BC38A6200D6CF66 /* HTMLDocumentType.m in Sources */,
 				206108521BC38A6200D6CF66 /* HTMLParser.m in Sources */,
+				20A4D8BD1C5450510099B01F /* UIColor+Expanded.m in Sources */,
 				206108381BC3876E00D6CF66 /* ExtensionDelegate.swift in Sources */,
 				2061084F1BC38A6200D6CF66 /* HTMLEntities.m in Sources */,
 				206108501BC38A6200D6CF66 /* HTMLNode.m in Sources */,
@@ -928,6 +930,7 @@
 				206108441BC3876E00D6CF66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		206108471BC3876E00D6CF66 /* Build configuration list for PBXNativeTarget "Blinky Watch" */ = {
 			isa = XCConfigurationList;
@@ -936,6 +939,7 @@
 				206108421BC3876E00D6CF66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20E83E471BC30AA9008816EA /* Build configuration list for PBXProject "Blinky Client" */ = {
 			isa = XCConfigurationList;

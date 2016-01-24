@@ -11,6 +11,9 @@ import Foundation
 
 
 class SpeedInterfaceController: WKInterfaceController {
+    
+    @IBOutlet var speedSlider: WKInterfaceSlider?
+    @IBOutlet var speedLabel: WKInterfaceLabel?
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -26,6 +29,15 @@ class SpeedInterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    
+    @IBAction func sliderValueChanged(value: Float) {
+        speedLabel?.setText("Speed: "+String(Int(value)));
+        HTTPRequestHandler.sharedInstance.sendSpeed(Double(value), completion: {
+            _data in
+            //Do stuff
+        })
     }
 
 }
