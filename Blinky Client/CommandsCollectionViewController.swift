@@ -48,6 +48,8 @@ class CommandsCollectionViewController: UICollectionViewController {
                 }
             })
         })
+        
+        HTTPRequestHandler.sharedInstance.refreshState()
     }
     
 

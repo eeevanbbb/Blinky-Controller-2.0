@@ -9,9 +9,15 @@
 import UIKit
 
 class HTTPRequestHandler: NSObject {
-    let baseURL = "http://192.168.0.137:9001"
+    let baseURL = "http://192.168.0.138:9001"
     
     static let sharedInstance = HTTPRequestHandler()
+    
+    var command: String = "None"
+    var color: UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+    var speed: Float = 1.0
+    var bpm: Int = 1
+    var dynaColor: Bool = false
     
     func getListOfCommands(completion: (commands: [String]) -> Void) {
         let request = NSMutableURLRequest(URL: NSURL(string: baseURL+"/request/validcommands")!)
@@ -93,4 +99,24 @@ class HTTPRequestHandler: NSObject {
 			completion(responseData: data)
 		}).resume()
 	}
+    
+    func refreshState() {
+        let request = NSMutableURLRequest(URL: NSURL(string: baseURL+"/request/state")!)
+        
+        let session = NSURLSession.sharedSession()
+        let _: Void = session.dataTaskWithRequest(request, completionHandler: {
+            data, response, error in
+            //Interpret data
+            if data != nil {
+                if let HTMLString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
+                    let document = HTMLDocument(string: HTMLString as String)
+                    let headerNodes = document.nodesMatchingSelector("p")
+                    for var headerNode in headerNodes {
+                        let textContent = headerNode.textContent
+                        NSLog("Text Content: %@", textContent)
+                    }
+                }
+            }
+        }).resume()
+    }
 }
