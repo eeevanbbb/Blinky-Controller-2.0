@@ -39,6 +39,21 @@ class SpeedAndColorViewController: UIViewController, UIPickerViewDelegate, UIPic
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        HTTPRequestHandler.sharedInstance.refreshState({
+            error in
+            if (error != nil) {
+                print("Error refreshing state: %@",error)
+            } else {
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.refreshUI()
+                })
+            }
+        })
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -49,6 +64,23 @@ class SpeedAndColorViewController: UIViewController, UIPickerViewDelegate, UIPic
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    func refreshUI() {
+        let color = HTTPRequestHandler.sharedInstance.color
+        colorBox.backgroundColor = color
+        redLabel.text = String(Int(color.red * 255.0))
+        greenLabel.text = String(Int(color.green * 255.0))
+        blueLabel.text = String(Int(color.blue * 255.0))
+        redSlider.setValue(Float(color.red) * 255.0, animated: true)
+        greenSlider.setValue(Float(color.green) * 255.0, animated: true)
+        blueSlider.setValue(Float(color.blue) * 255.0, animated: true)
+        
+        speedLabel.text = String(format: "%.1f", arguments: [HTTPRequestHandler.sharedInstance.speed])
+        speedSlider.value = HTTPRequestHandler.sharedInstance.speed
+        
+        bpmPicker.selectRow(HTTPRequestHandler.sharedInstance.bpm-1, inComponent: 0, animated: true)
+    }
     
     func updateColor() {
         let color = UIColor(red: CGFloat(redSlider.value)/255.0, green: CGFloat(greenSlider.value)/255.0, blue: CGFloat(blueSlider.value)/255.0, alpha: 1.0)

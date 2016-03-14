@@ -49,7 +49,16 @@ class CommandsCollectionViewController: UICollectionViewController {
             })
         })
         
-        HTTPRequestHandler.sharedInstance.refreshState()
+        HTTPRequestHandler.sharedInstance.refreshState({
+            error in
+            if (error != nil) {
+                print("Error refreshing state: %@",error)
+            } else {
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.collectionView?.reloadData()
+                })
+            }
+        })
     }
     
 
@@ -78,8 +87,23 @@ class CommandsCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CommandsCollectionViewCell
     
         // Configure the cell
-        cell.commandLabel.text = commands[indexPath.item]
+        let command = commands[indexPath.item]
+        
+        cell.commandLabel.text = command
         cell.commandLabel.adjustsFontSizeToFitWidth = true
+        
+        if (command == HTTPRequestHandler.sharedInstance.command) {
+            cell.backgroundColor = UIColor.lightGrayColor()
+        } else {
+            cell.backgroundColor = UIColor.clearColor()
+        }
+        
+        if (command == "DCStart") {
+            cell.backgroundColor = HTTPRequestHandler.sharedInstance.dynaColor ? UIColor.lightGrayColor() : UIColor.clearColor()
+        }
+        if (command == "DCStop") {
+            cell.backgroundColor = HTTPRequestHandler.sharedInstance.dynaColor ? UIColor.clearColor() : UIColor.lightGrayColor()
+        }
     
         return cell
     }
@@ -118,6 +142,15 @@ class CommandsCollectionViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let command = commands[indexPath.item]
+        if (command == "DCStart") {
+            HTTPRequestHandler.sharedInstance.dynaColor = true
+        } else if (command == "DCStop") {
+            HTTPRequestHandler.sharedInstance.dynaColor = false
+        } else {
+            HTTPRequestHandler.sharedInstance.command = command
+        }
+        self.collectionView?.reloadData()
+        
         HTTPRequestHandler.sharedInstance.sendCommand(command, completion: {
             data in
             dispatch_async(dispatch_get_main_queue(), {

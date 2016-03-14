@@ -100,23 +100,42 @@ class HTTPRequestHandler: NSObject {
 		}).resume()
 	}
     
-    func refreshState() {
-        let request = NSMutableURLRequest(URL: NSURL(string: baseURL+"/request/state")!)
+    func parseJSONReply(data: NSData) throws -> Dictionary<String,AnyObject> {
+        let value: Dictionary<String,AnyObject>?
+        do {
+            value = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? Dictionary<String,AnyObject>
+            return value!
+        } catch let error as NSError {
+            throw error
+        }
+    }
+    
+    func refreshState(completion: (error: NSError?) -> Void) {
+        let request = NSMutableURLRequest(URL: NSURL(string: baseURL + "/request/stateJSON")!)
         
         let session = NSURLSession.sharedSession()
         let _: Void = session.dataTaskWithRequest(request, completionHandler: {
             data, response, error in
-            //Interpret data
-            if data != nil {
-                if let HTMLString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
-                    let document = HTMLDocument(string: HTMLString as String)
-                    let headerNodes = document.nodesMatchingSelector("p")
-                    for var headerNode in headerNodes {
-                        let textContent = headerNode.textContent
-                        NSLog("Text Content: %@", textContent)
-                    }
+            if error != nil || data == nil {
+                completion(error: error)
+            } else {
+                do {
+                    let reply = try self.parseJSONReply(data!)
+                    let red = reply["colorR"] as! CGFloat
+                    let green = reply["colorG"] as! CGFloat
+                    let blue = reply["colorB"] as! CGFloat
+                    self.color = UIColor(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: 1)
+                    self.speed = reply["speed"] as! Float
+                    self.bpm = reply["bpm"] as! Int
+                    self.dynaColor = reply["dynaColor"] as! Bool
+                    self.command = reply["command"] as! String
+                    
+                    completion(error: nil)
+                } catch let error as NSError {
+                    completion(error: error)
                 }
             }
         }).resume()
+        
     }
 }
