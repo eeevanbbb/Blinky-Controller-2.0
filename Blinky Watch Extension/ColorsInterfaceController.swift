@@ -31,11 +31,34 @@ class ColorsInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        refreshState()
     }
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    
+    func refreshState() {
+        HTTPRequestHandler.sharedInstance.refreshState({
+            error in
+            if (error != nil) {
+                print("Error refreshing state: %@",error)
+            } else {
+                let color = HTTPRequestHandler.sharedInstance.color
+                self.red = Float(color.red * 255.0)
+                self.green = Float(color.green * 255.0)
+                self.blue = Float(color.blue * 255.0)
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.updateColorString()
+                    self.redSlider?.setValue(self.red)
+                    self.greenSlider?.setValue(self.green)
+                    self.blueSlider?.setValue(self.blue)
+                })
+            }
+        })
     }
     
     

@@ -24,11 +24,29 @@ class SpeedInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        refreshState()
     }
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    
+    
+    func refreshState() {
+        HTTPRequestHandler.sharedInstance.refreshState({
+            error in
+            if (error != nil) {
+                print("Error refreshing state: %@",error)
+            } else {
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.speedSlider?.setValue(HTTPRequestHandler.sharedInstance.speed)
+                    self.speedLabel?.setText("Speed: "+String(Int(HTTPRequestHandler.sharedInstance.speed)))
+                })
+            }
+        })
     }
     
     

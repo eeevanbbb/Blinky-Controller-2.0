@@ -53,7 +53,14 @@ class InterfaceController: WKInterfaceController {
         chosenCommandIndex = index
     }
     
-    override func pickerDidSettle(picker: WKInterfacePicker) {
+//    override func pickerDidSettle(picker: WKInterfacePicker) {
+//        HTTPRequestHandler.sharedInstance.sendCommand(commands[chosenCommandIndex], completion: {
+//            data in
+//            //Do stuff?
+//        })
+//    }
+    
+    @IBAction func sendCommand() {
         HTTPRequestHandler.sharedInstance.sendCommand(commands[chosenCommandIndex], completion: {
             data in
             //Do stuff?
