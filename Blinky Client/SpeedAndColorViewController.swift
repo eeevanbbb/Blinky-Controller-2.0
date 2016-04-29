@@ -27,6 +27,8 @@ class SpeedAndColorViewController: UIViewController, UIPickerViewDelegate, UIPic
 	@IBOutlet var bpmPicker: UIPickerView!
     
     var webViewPresent = false
+    
+    var refreshTimer: NSTimer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,16 +44,11 @@ class SpeedAndColorViewController: UIViewController, UIPickerViewDelegate, UIPic
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        HTTPRequestHandler.sharedInstance.refreshState({
-            error in
-            if (error != nil) {
-                print("Error refreshing state: %@",error)
-            } else {
-                dispatch_async(dispatch_get_main_queue(), {
-                    self.refreshUI()
-                })
-            }
-        })
+        refreshState()
+        
+        if refreshTimer == nil && HTTPRequestHandler.sharedInstance.dynaColor {
+            refreshTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(SpeedAndColorViewController.onTimer), userInfo: nil, repeats: true)
+        }
     }
     
 
@@ -64,6 +61,30 @@ class SpeedAndColorViewController: UIViewController, UIPickerViewDelegate, UIPic
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func onTimer() {
+        if HTTPRequestHandler.sharedInstance.dynaColor {
+            refreshState()
+        } else {
+            refreshTimer?.invalidate()
+            refreshTimer = nil
+        }
+    }
+    
+    
+    
+    func refreshState() {
+        HTTPRequestHandler.sharedInstance.refreshState({
+            error in
+            if (error != nil) {
+                print("Error refreshing state: %@",error)
+            } else {
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.refreshUI()
+                })
+            }
+        })
+    }
     
     
     func refreshUI() {

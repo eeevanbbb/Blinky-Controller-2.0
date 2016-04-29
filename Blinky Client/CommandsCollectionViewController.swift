@@ -18,6 +18,7 @@ class CommandsCollectionViewCell: UICollectionViewCell {
 class CommandsCollectionViewController: UICollectionViewController {
     
     var commands = [String]()
+    var webView: WKWebView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -153,29 +154,46 @@ class CommandsCollectionViewController: UICollectionViewController {
         
         HTTPRequestHandler.sharedInstance.sendCommand(command, completion: {
             data in
+            if data != nil {
+                /*
+                self.showWebViewWithData(data!)
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(2.0 * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
+                    self.dismissWebView()
+                })
+                */
+            } else {
+                print("Response data is nil")
+            }
+        })
+    }
+    
+    
+    func showWebViewWithData(data: NSData) {
+        if let HTMLString = NSString(data: data, encoding: NSUTF8StringEncoding) {
             dispatch_async(dispatch_get_main_queue(), {
-                if data != nil {
-                    if let HTMLString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
-                        let webView = WKWebView(frame: CGRectMake(0, self.view.frame.height, self.view.frame.width, 100))
-                        webView.loadHTMLString(HTMLString as String, baseURL: nil)
-                        self.view.addSubview(webView)
-                        UIView.animateWithDuration(0.5, animations: {
-                            webView.frame = CGRectMake(webView.frame.origin.x, self.view.frame.height-webView.frame.height, self.view.frame.width, webView.frame.height)
-                        })
-                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(2.0 * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
-                            UIView.animateWithDuration(0.5, animations: {
-                                webView.frame = CGRectMake(webView.frame.origin.x, self.view.frame.height, self.view.frame.width, webView.frame.height)
-                                }, completion: {
-                                    _ in
-                                    webView.removeFromSuperview()
-                            })
-                        });
-                    } else {
-                        print("Could not parse response data")
-                    }
-                } else {
-                    print("Response data is nil")
-                }
+                self.webView = WKWebView(frame: CGRectMake(0, self.view.frame.height, self.view.frame.width, 100))
+                self.webView!.loadHTMLString(HTMLString as String, baseURL: nil)
+                self.view.addSubview(self.webView!)
+                self.webView?.scrollView.userInteractionEnabled = false
+                let swipeDownGesture = UISwipeGestureRecognizer(target: self, action: #selector(CommandsCollectionViewController.dismissWebView))
+                swipeDownGesture.direction = .Down
+                self.webView?.addGestureRecognizer(swipeDownGesture)
+                UIView.animateWithDuration(0.5, animations: {
+                    self.webView!.frame = CGRectMake(self.webView!.frame.origin.x, self.view.frame.height-self.webView!.frame.height, self.view.frame.width, self.webView!.frame.height)
+                })
+            })
+        } else {
+            print("Could not parse response data")
+        }
+    }
+    
+    func dismissWebView() {
+        dispatch_async(dispatch_get_main_queue(), {
+            UIView.animateWithDuration(0.5, animations: {
+                self.webView?.frame = CGRectMake(self.webView!.frame.origin.x, self.view.frame.height, self.view.frame.width, self.webView!.frame.height)
+                }, completion: {
+                    _ in
+                    self.webView?.removeFromSuperview()
             })
         })
     }
