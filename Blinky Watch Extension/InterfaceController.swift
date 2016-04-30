@@ -39,6 +39,7 @@ class InterfaceController: WKInterfaceController {
                         items.append(item)
                     }
                     self.commandPicker.setItems(items)
+                    self.refreshState()
                 }
             })
         })
@@ -47,6 +48,21 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    func refreshState() {
+        HTTPRequestHandler.sharedInstance.refreshState({
+            error in
+            if error != nil {
+                print("Error refreshing state")
+            } else {
+                let command = HTTPRequestHandler.sharedInstance.command
+                let index = self.commands.indexOf(command)
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.commandPicker.setSelectedItemIndex(index!)
+                })
+            }
+        })
     }
 
     @IBAction func itemPickerUpdated(index: Int) {
