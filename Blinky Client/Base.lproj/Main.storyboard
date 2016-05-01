@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -19,6 +19,7 @@
                     <connections>
                         <segue destination="KH1-69-6xk" kind="relationship" relationship="viewControllers" id="v1G-03-KUf"/>
                         <segue destination="OUJ-tt-DVM" kind="relationship" relationship="viewControllers" id="oZT-rN-Upp"/>
+                        <segue destination="Kp5-Wr-JKa" kind="relationship" relationship="viewControllers" id="vBr-BO-sme"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -525,6 +526,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXH-xQ-5Mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="709.5" y="402"/>
+        </scene>
+        <!--Manual-->
+        <scene sceneID="3Z2-PP-Mg8">
+            <objects>
+                <viewController id="Kp5-Wr-JKa" customClass="ManualViewController" customModule="Blinky_Client" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tnz-l9-Q7Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tna-6x-yYy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tA6-oG-jNW">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Manual" id="ad1-7O-5eh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5IS-mM-MWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709.5" y="1094.25"/>
         </scene>
     </scenes>
 </document>

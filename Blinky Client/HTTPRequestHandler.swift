@@ -138,4 +138,17 @@ class HTTPRequestHandler: NSObject {
         }).resume()
         
     }
+    
+    func sendManualCommand(lightIndex: Int, color: UIColor, completion: (error: NSError?) -> Void) {
+        let hexString = color.hexStringValue
+        let commandString = "/manual/\(lightIndex)/\(hexString)"
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: baseURL+commandString)!)
+        
+        let session = NSURLSession.sharedSession()
+        let _: Void = session.dataTaskWithRequest(request, completionHandler: {
+            data, response, error in
+            completion(error: error)
+        }).resume()
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203A0F7C1CD596D100FBDA1B /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203A0F7B1CD596D100FBDA1B /* ManualViewController.swift */; };
 		206108281BC3876E00D6CF66 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206108261BC3876E00D6CF66 /* Interface.storyboard */; };
 		2061082A1BC3876E00D6CF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206108291BC3876E00D6CF66 /* Assets.xcassets */; };
 		206108311BC3876E00D6CF66 /* Blinky Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 206108301BC3876E00D6CF66 /* Blinky Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -123,6 +124,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		203A0F7B1CD596D100FBDA1B /* ManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
 		206108241BC3876E00D6CF66 /* Blinky Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinky Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		206108271BC3876E00D6CF66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		206108291BC3876E00D6CF66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				20E83EBF1BC32BCB008816EA /* HTTPRequestHandler.swift */,
 				20E83EBD1BC32A58008816EA /* CommandsCollectionViewController.swift */,
 				20E83EC51BC360E2008816EA /* SpeedAndColorViewController.swift */,
+				203A0F7B1CD596D100FBDA1B /* ManualViewController.swift */,
 				20E83E551BC30AA9008816EA /* Main.storyboard */,
 				20E83E581BC30AA9008816EA /* Assets.xcassets */,
 				20E83E5A1BC30AA9008816EA /* LaunchScreen.storyboard */,
@@ -603,6 +606,7 @@
 				20E83EB81BC326AF008816EA /* HTMLString.m in Sources */,
 				20E83EC01BC32BCB008816EA /* HTTPRequestHandler.swift in Sources */,
 				20E83EAE1BC326AF008816EA /* HTMLDocumentType.m in Sources */,
+				203A0F7C1CD596D100FBDA1B /* ManualViewController.swift in Sources */,
 				20E83EB31BC326AF008816EA /* HTMLOrderedDictionary.m in Sources */,
 				20E83EB11BC326AF008816EA /* HTMLEntities.m in Sources */,
 				20E83EB51BC326AF008816EA /* HTMLPreprocessedInputStream.m in Sources */,
